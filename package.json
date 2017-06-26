@@ -1,0 +1,24 @@
+{
+  "name": "cnn-starter-utils",
+  "version": "1.0.0",
+  "description": "Helpers for cnn-starter tools",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npm run clean && babel src -d lib",
+    "build:watch": "npm run clean && babel src -w -d lib",
+    "clean": "rimraf lib",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnnlabs/cnn-starter-utils.git"
+  },
+  "author": "Joshua D. Clayton <joshua.clayton@turner.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "rimraf": "^2.6.1"
+  }
+}
